@@ -61,4 +61,3 @@ która poprawnie sortuje tablicę liczb
 ```
 [1,1.2,11,22,2.1].sortNr() === [1,1.2,2.1,11,22]
 ```
-*/
