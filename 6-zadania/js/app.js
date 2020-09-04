@@ -16,3 +16,29 @@ const users = [
     [ 14, "Kimberli", "Berkeley", "kberkeleyd@merriam-webster.com", 19, 1994.97] ,
     [ 15, "Tawnya", "Illingworth", "tillingworthe@quantcast.com", 23, 1742.64]
 ]
+
+function fixData(arr) {
+    const newTab = [];
+    for (let el of arr) {
+        const [id, name, surname, email, age, cash] = el;
+        newTab.push({id, name, surname, email, age, cash});
+    }
+    return newTab;
+}
+
+const fixTable = fixData(users);
+console.log(fixTable);
+
+const sumCash = fixTable.reduce((a, b) => {
+    return a + b.cash;
+}, 0)
+
+const avgAge = fixTable.reduce((a, b) => {
+    return a + b.age;
+}, 0) / fixTable.length;
+
+const names = fixTable.map(el => el.name);
+
+console.log(`Wszyscy użytkownicy mają razem pieniędzy: ${ sumCash }zł`);
+console.log(`Wszyscy użytkownicy mają średni wiek: ${ avgAge }lat`);
+console.log(names);
