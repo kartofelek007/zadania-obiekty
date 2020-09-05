@@ -37,8 +37,11 @@ const avgAge = fixTable.reduce((a, b) => {
     return a + b.age;
 }, 0) / fixTable.length;
 
-const names = fixTable.map(el => el.name);
-
 console.log(`Wszyscy użytkownicy mają razem pieniędzy: ${ sumCash }zł`);
 console.log(`Wszyscy użytkownicy mają średni wiek: ${ avgAge }lat`);
+
+const names = fixTable.map(el => el.name);
 console.log(names);
+
+const emailsTab = fixTable.map(el => el.email);
+console.log(emailsTab);
