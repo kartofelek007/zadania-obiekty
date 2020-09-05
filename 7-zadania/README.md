@@ -1,4 +1,6 @@
-# Zadania - obiekty - konstruktor
+# Zadania - obiekty - class / konstruktor
+
+Poniższe zadania możesz wykonać pomocą konstruktora albo class.
 
 ## Zadanie 1
 Chcesz stworzyć 3 obiekty typu **Car**. Każdy samochód powinien mieć ustawione właściwości podawane przy tworzeniu obiektu:
@@ -9,7 +11,6 @@ Chcesz stworzyć 3 obiekty typu **Car**. Każdy samochód powinien mieć ustawio
 - **age** - number,
 
 metodę **printDetails()**, która wypisze powyższe właściwości.
-Wykorzystaj w tym zadaniu prototyp.
 
 ## Zadanie 2
 Stwórz konstruktor **Enemy**.
