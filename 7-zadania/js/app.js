@@ -117,9 +117,9 @@ slider2.prevSlide();
 slider2.nextSlide();
 
 // ## Zadanie 4
-String.prototype.sortText(char) = function(char) {
+String.prototype.sortText = function(char) {
     const tab = this.split(char);
-    tab.sort((a, b) => a.localCompare(b));
+    tab.sort((a, b) => a.localeCompare(b));
     return tab.join(char);
 }
 
