@@ -17,27 +17,19 @@ const tableGenerator = {
     },
 
     generateTableFromText(str) {
-        return str.split(" ");
+		if (typeof str === 'string') {
+			return str.split(' ');
+		} else {
+			return [];
+		}
     },
 
     getMaxFromTable(arr) {
-        let max = -1;
-        for (let i=0; i<arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-        }
-        return max;
+    	return Math.max(...arr);
     },
 
     getMinFromTable(arr) {
-        let min = -1;
-        for (let i=0; i<arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-        }
-        return min;
+		return Math.min(...arr);
     },
 
     delete(arr, index) {
